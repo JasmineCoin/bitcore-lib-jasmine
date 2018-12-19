@@ -23,8 +23,8 @@ describe('Networks', function() {
     networks.testnet.regtestEnabled.should.equal(true);
 
     networks.disableRegtest();
-    networks.testnet.networkMagic.should.deep.equal(new Buffer('cee2caff', 'hex'));
-    networks.testnet.port.should.equal(19999);
+    networks.testnet.networkMagic.should.deep.equal(new Buffer('4765ba43', 'hex'));
+    networks.testnet.port.should.equal(8339);
     networks.testnet.dnsSeeds.should.deep.equal([
     ]);
   });
